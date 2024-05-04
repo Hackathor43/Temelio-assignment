@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.nonprofit-list,
+.foundation-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nonprofit-item,
+.foundation-item {
+  flex-basis: calc(33.33% - 10px);
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.form > label {
+  margin: 10px;
+  gap: 5px
+}
+
+.width-100 {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.align-center{
+  align-items: center;
+}
+
+.flex-1{
+  flex: 1;
+}
+
+.flex-2{
+  flex:2
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+} 
+
+.align-center{
+  align-items: center;
+}
+
+.font-size-medium{
+  font-size: 10vh;
+}
+
+.font-size-small{
+  font-size: 6vh;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.info-card{
+}
+
+.font-weight-600{
+  font-weight: 600;
+}
+
+.font-weight-800{
+  font-weight: 800;
 }
